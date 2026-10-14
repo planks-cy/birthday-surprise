@@ -19,14 +19,39 @@
   const isPlaceholder = v => typeof v === 'string' && /^\s*\[[^\]]+\]\s*$/.test(v);
   const SVG_HEART = '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-heart"/></svg>';
 
+  function normalizeName(value, fallback = '') {
+    if (typeof value !== 'string') return fallback;
+    const cleaned = value.trim().replace(/^\[(.*)\]$/, '$1').trim();
+    return cleaned || fallback;
+  }
+
   function get(path, fallback) {
     const v = path.split('.').reduce((o, k) => (o == null ? undefined : o[k]), cfg);
     return v === undefined ? fallback : v;
   }
   function fill(str) {
-    return String(str)
-      .replace(/\{Priyanka\}/g, cfg.Priyanka || '')
-      .replace(/\{Rahul\}/g, cfg.Rahul || '');
+    const her = normalizeName(cfg.herName || cfg.Priyanka || 'Zoobi Doobi');
+    const you = normalizeName(cfg.yourName || cfg.Rahul || 'Rahul');
+    let out = String(str || '');
+
+    const replacements = [
+      ['{herName}', her],
+      ['{yourName}', you],
+      ['{Priyanka}', her],
+      ['{Rahul}', you],
+      ['{ZOOBI DOOBI}', her],
+      ['{ZOOBI_DOOBI}', her],
+      ['{Zoobi Doobi}', her],
+      ['{Zoobi_Doobi}', her],
+      ['{YOUR_NAME}', you],
+      ['{HER_NAME}', her]
+    ];
+
+    replacements.forEach(([from, to]) => {
+      out = out.split(from).join(to);
+    });
+
+    return out;
   }
   function text(path, fallback) {
     const v = get(path, fallback);
@@ -200,11 +225,7 @@
 
   /* ---------- gallery + lightbox ---------- */
   const FALLBACK_IMG = 'data:image/svg+xml;utf8,' + encodeURIComponent(
-    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">' +
-    '<stop offset="0" stop-color="#FFE3EE"/><stop offset="1" stop-color="#F7A8B8"/></linearGradient></defs>' +
-    '<rect width="800" height="1000" fill="url(#g)"/>' +
-    '<g transform="translate(400 440) scale(9) translate(-12 -12)" fill="#fff" opacity=".9"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></g>' +
-    '<text x="400" y="640" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="44" fill="#702E3A">Add your photo</text></svg>');
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFE3EE"/><stop offset="1" stop-color="#F7A8B8"/></linearGradient></defs><rect width="800" height="1000" fill="url(#g)"/><g transform="translate(400 440) scale(9) translate(-12 -12)" fill="#fff" opacity=".9"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 2.03-.96 3.82-2.49 5.07L12 21.35z"/></g><text x="400" y="640" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="44" fill="#702E3A">Add your photo</text></svg>');
 
   const photos = get('photos', []);
   const photoImgs = [];
@@ -517,7 +538,7 @@
       btn.setAttribute('aria-label', on ? 'Pause music' : 'Play music');
     }
     btn.addEventListener('click', () => {
-      if (!loaded) { audio.src = file; loaded = true; } // only fetched after the first tap
+      if (!loaded) { audio.src = file; loaded = true; }
       if (audio.paused) {
         const pr = audio.play();
         if (pr && typeof pr.catch === 'function') pr.catch(() => { /* blocked or failed — 'error' event handles real failures */ });
