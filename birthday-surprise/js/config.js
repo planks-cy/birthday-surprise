@@ -80,7 +80,8 @@ window.BIRTHDAY_CONFIG = {
       {
         date: "DAILY",
         title: "The reason you are so special to me",
-        text: "Tell her, in your own words, what makes her so special to you."
+        text: "Your cute smile, deep eyes, your natural fragrance, and the fearless way you face everything make me fall for you a little more every day. ❤️🥹
+But beyond all these little things, it’s you, just the way you are, that makes you my favourite person and my forever choice. ♾️💗"
       }
     ]
   },
