@@ -25,8 +25,8 @@
   }
   function fill(str) {
     return String(str)
-      .replace(/\{herName\}/g, cfg.herName || '')
-      .replace(/\{yourName\}/g, cfg.yourName || '');
+      .replace(/\{Priyanka\}/g, cfg.Priyanka || '')
+      .replace(/\{Rahul\}/g, cfg.Rahul || '');
   }
   function text(path, fallback) {
     const v = get(path, fallback);
