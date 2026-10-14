@@ -48,10 +48,10 @@ window.BIRTHDAY_CONFIG = {
     subtitle: "A few of my favourite moments, kept safe in one little place."
   },
   photos: [
-    { src: "img1.jpeg", alt: "Placeholder photo 1 — replace with your own", caption: "The beginning of something beautiful." },
-    { src: "img2.jpeg", alt: "Placeholder photo 2 — replace with your own", caption: "My favourite moments are the ones with you." },
-    { src: "img3.jpeg", alt: "Placeholder photo 3 — replace with your own", caption: "Every little memory means everything to me." },
-    { src: "img4.jpeg", alt: "Placeholder photo 4 — replace with your own", caption: "And somehow, you make ordinary days special." }
+    { src: "assets/images/img1.jpeg", alt: "Placeholder photo 1 — replace with your own", caption: "The beginning of something beautiful." },
+    { src: "assets/images/img2.jpeg", alt: "Placeholder photo 2 — replace with your own", caption: "My favourite moments are the ones with you." },
+    { src: "assets/images/img3.jpeg", alt: "Placeholder photo 3 — replace with your own", caption: "Every little memory means everything to me." },
+    { src: "assets/images/img4.jpeg", alt: "Placeholder photo 4 — replace with your own", caption: "And somehow, you make ordinary days special." }
   ],
 
 
@@ -65,17 +65,17 @@ window.BIRTHDAY_CONFIG = {
       {
         date: "[10 AUG 2026]",
         title: "The day we met",
-        text: "The day I met you, I didn’t know what the future held, but my heart had already made its choice. ❤️ I just knew I wanted to spend my entire life with you, creating a thousand beautiful memories together. 💗"
+        text: "The day I met you, I didn’t know what the future held, but my heart had already made its choice. ❤️ I just knew I wanted to spend my entire life with you, creating a thousand [...]"
       },
       {
         date: "[14 AUG 2026]",
         title: "Our first special memory",
-        text: "I’ll never forget the day we talked for so long and shared so many things, especially our very first handshake. ❤️ It was such a simple moment, but it became one of my most precious memories with you. 💗"
+        text: "I’ll never forget the day we talked for so long and shared so many things, especially our very first handshake. ❤️ It was such a simple moment, but it became one of my most pr[...]"
       },
       {
         date: "[03 SEP 2026]",
         title: "My favourite moment with you",
-        text: "Some moments are too special to be explained in words; they’re meant to be felt and kept safe in our hearts. ❤️ My favourite moments with you are the ones that live in my memories, where I can relive our happiness whenever I miss you. 💗"
+        text: "Some moments are too special to be explained in words; they’re meant to be felt and kept safe in our hearts. ❤️ My favourite moments with you are the ones that live in my memo[...]"
       },
       {
         date: "DAILY",
@@ -91,7 +91,7 @@ window.BIRTHDAY_CONFIG = {
                       Leave a blank line between paragraphs.
      Option B: keep "[YOUR_BIRTHDAY_MESSAGE]" as it is, and the starter
                letter in `paragraphs` will be used instead. */
-  yourBirthdayMessage: "Happy Birthday, my baccha! ❤️🥹 Always stay happy, keep smiling, and please take care of your health because I want to see you healthy and happy forever! 🫶🏻💗",
+  yourBirthdayMessage: `Happy Birthday, my baccha! ❤️🥹 Always stay happy, keep smiling, and please take care of your health because I want to see you healthy and happy forever! 🫶🏻💗[...]`,
 
   letter: {
     eyebrow: "Chapter Three",
@@ -130,8 +130,7 @@ window.BIRTHDAY_CONFIG = {
     button: "Make a Wish ✨",
     relightButton: "Light the Candles Again 🕯️",
     candles: 5,                      // 1 – 9
-    finalMessage: "May life keep your smile glowing, your dreams soaring, and your heart wrapped in happiness, my baccha. ♡
-                  Happy Birthday, my love. Take care of yourself, because my favourite future is the one spent with you. ∞❤️"
+    finalMessage: `May life keep your smile glowing, your dreams soaring, and your heart wrapped in happiness, my baccha. ♡\nHappy Birthday, my love. Take care of yourself, because my favourite future is the one spent with you. ∞❤️`
   },
 
 
