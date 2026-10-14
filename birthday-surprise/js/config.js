@@ -65,23 +65,23 @@ window.BIRTHDAY_CONFIG = {
       {
         date: "[10 AUG 2026]",
         title: "The day we met",
-        text: "[The day I met you, I didn’t know what the future held, but my heart had already made its choice. ❤️
-I just knew I wanted to spend my entire life with you, creating a thousand beautiful memories together. 💗]"
+        text: "The day I met you, I didn’t know what the future held, but my heart had already made its choice ❤️
+                I just knew I wanted to spend my entire life with you, creating a thousand beautiful memories together. 💗"
       },
       {
         date: "[14 AUG 2026]",
         title: "Our first special memory",
-        text: "[I’ll never forget the day we talked for so long and shared so many things, especially our very first handshake. ❤️ It was such a simple moment, but it became one of my most precious memories with you. 💗]"
+        text: "I’ll never forget the day we talked for so long and shared so many things, especially our very first handshake. ❤️ It was such a simple moment, but it became one of my most precious memories with you. 💗"
       },
       {
         date: "[03 SEP 2026]",
         title: "My favourite moment with you",
-        text: "[Some moments are too special to be explained in words; they’re meant to be felt and kept safe in our hearts. ❤️ My favourite moments with you are the ones that live in my memories, where I can relive our happiness whenever I miss you. 💗]"
+        text: "Some moments are too special to be explained in words; they’re meant to be felt and kept safe in our hearts. ❤️ My favourite moments with you are the ones that live in my memories, where I can relive our happiness whenever I miss you. 💗"
       },
       {
         date: "DAILY",
         title: "The reason you are so special to me",
-        text: "[Tell her, in your own words, what makes her so special to you.]"
+        text: "Tell her, in your own words, what makes her so special to you."
       }
     ]
   },
@@ -92,12 +92,12 @@ I just knew I wanted to spend my entire life with you, creating a thousand beaut
                       Leave a blank line between paragraphs.
      Option B: keep "[YOUR_BIRTHDAY_MESSAGE]" as it is, and the starter
                letter in `paragraphs` will be used instead. */
-  yourBirthdayMessage: "[Happy Birthday, my baccha! ❤️🥹 Always stay happy, keep smiling, and please take care of your health because I want to see you healthy and happy forever! 🫶🏻💗]",
+  yourBirthdayMessage: "Happy Birthday, my baccha! ❤️🥹 Always stay happy, keep smiling, and please take care of your health because I want to see you healthy and happy forever! 🫶🏻💗",
 
   letter: {
     eyebrow: "Chapter Three",
     heading: "A Little Letter for You 💌",
-    paragraphs: [
+    paragraphs: 
       "Happy Birthday, my love. ❤️",
       "Today is your special day, but I feel lucky every day to have someone as wonderful as you in my life.",
       "Your smile makes ordinary moments feel special, and your presence brings a kind of happiness that words can never fully explain.",
@@ -105,7 +105,7 @@ I just knew I wanted to spend my entire life with you, creating a thousand beaut
       "No matter how many birthdays come and go, I hope you always remember how special you are to me.",
       "Today, this little corner of the internet is just for you. Every detail is made to celebrate the beautiful person you are.",
       "Happy Birthday, my beautiful girl. You deserve the world. ❤️"
-    ],
+    ,
     signOff: "Forever and always yours, ❤️,",
     signature: "{Rahul}",
     skipButton: "Show the whole letter"
