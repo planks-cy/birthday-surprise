@@ -65,8 +65,7 @@ window.BIRTHDAY_CONFIG = {
       {
         date: "[10 AUG 2026]",
         title: "The day we met",
-        text: "The day I met you, I didn’t know what the future held, but my heart had already made its choice ❤️
-                I just knew I wanted to spend my entire life with you, creating a thousand beautiful memories together. 💗"
+        text: "The day I met you, I didn’t know what the future held, but my heart had already made its choice. ❤️ I just knew I wanted to spend my entire life with you, creating a thousand beautiful memories together. 💗"
       },
       {
         date: "[14 AUG 2026]",
@@ -97,7 +96,7 @@ window.BIRTHDAY_CONFIG = {
   letter: {
     eyebrow: "Chapter Three",
     heading: "A Little Letter for You 💌",
-    paragraphs: 
+    paragraphs: [
       "Happy Birthday, my love. ❤️",
       "Today is your special day, but I feel lucky every day to have someone as wonderful as you in my life.",
       "Your smile makes ordinary moments feel special, and your presence brings a kind of happiness that words can never fully explain.",
@@ -105,7 +104,7 @@ window.BIRTHDAY_CONFIG = {
       "No matter how many birthdays come and go, I hope you always remember how special you are to me.",
       "Today, this little corner of the internet is just for you. Every detail is made to celebrate the beautiful person you are.",
       "Happy Birthday, my beautiful girl. You deserve the world. ❤️"
-    ,
+    ],
     signOff: "Forever and always yours, ❤️,",
     signature: "{Rahul}",
     skipButton: "Show the whole letter"
