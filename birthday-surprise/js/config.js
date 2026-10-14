@@ -1,7 +1,7 @@
 /* =====================================================================
    ✨ PERSONALIZATION FILE — this is the ONLY file you need to edit ✨
 
-   • Replace every [PLACEHOLDER] in square brackets with your own text.
+   • Replace the values below with your own text.
    • Use {herName} and {yourName} anywhere in a text to insert the
      names set below — change a name once and it updates everywhere.
    • Keep the quotation marks "like this" and the commas at line ends.
@@ -11,12 +11,11 @@
 window.BIRTHDAY_CONFIG = {
 
   /* ---------- 1. NAMES ---------- */
-  herName: "[Priyanka]",            // her name or nickname
-  yourName: "[Rahul]",          // your name (shown in the letter's sign-off)
+  herName: "Zoobi Doobi",
+  yourName: "Rahul",
 
   /* Browser tab title */
   pageTitle: "A Birthday Surprise, Just for You ❤️ My Zoobi Doobi",
-
 
   /* ---------- 2. THEME COLORS ---------- */
   theme: {
@@ -28,7 +27,6 @@ window.BIRTHDAY_CONFIG = {
     white: "#FFFFFF"
   },
 
-
   /* ---------- 3. FIRST SCREEN ---------- */
   hero: {
     eyebrow: "For {ZOOBI DOOBI}",
@@ -37,62 +35,54 @@ window.BIRTHDAY_CONFIG = {
     button: "Start Your Surprise 💗"
   },
 
-
-  /* ---------- 4. PHOTO GALLERY ----------
-     Add, remove or reorder photos freely (4–8 look best).
-     To use your own photo: copy it into assets/images/ and change `src`.
-     Tip: resize photos to ~1200px wide (under 300 KB) so the page loads fast. */
+  /* ---------- 4. PHOTO GALLERY ---------- */
   memories: {
     eyebrow: "Chapter One",
     title: "Our Beautiful Memories",
     subtitle: "A few of my favourite moments, kept safe in one little place."
   },
   photos: [
-    { src: "assets/images/img1.jpeg", alt: "Placeholder photo 1 — replace with your own", caption: "The beginning of something beautiful." },
-    { src: "assets/images/img2.jpeg", alt: "Placeholder photo 2 — replace with your own", caption: "My favourite moments are the ones with you." },
-    { src: "assets/images/img3.jpeg", alt: "Placeholder photo 3 — replace with your own", caption: "Every little memory means everything to me." },
-    { src: "assets/images/img4.jpeg", alt: "Placeholder photo 4 — replace with your own", caption: "And somehow, you make ordinary days special." }
+    { src: "assets/images/img1.jpeg", alt: "Our first memory together", caption: "The beginning of something beautiful." },
+    { src: "assets/images/img2.jpeg", alt: "A favourite moment", caption: "My favourite moments are the ones with you." },
+    { src: "assets/images/img3.jpeg", alt: "A simple happy memory", caption: "Every little memory means everything to me." },
+    { src: "assets/images/img4.jpeg", alt: "A beautiful ordinary day", caption: "And somehow, you make ordinary days special." }
   ],
 
-
-  /* ---------- 5. OUR STORY (timeline) ----------
-     Replace each [DATE] and each [text in brackets] with your real story. */
+  /* ---------- 5. OUR STORY ---------- */
   story: {
     eyebrow: "Chapter Two",
     title: "Our Story",
     subtitle: "Every love story is beautiful, but ours is my favourite.",
     milestones: [
       {
-        date: "[10 AUG 2026]",
+        date: "10 Aug 2026",
         title: "The day we met",
-        text: "The day I met you, I didn’t know what the future held, but my heart had already made its choice. ❤️ I just knew I wanted to spend my entire life with you, creating a thousand [...]"
+        text: "The day I met you, I didn’t know what the future held, but my heart had already made its choice. ❤️ I just knew I wanted to spend my entire life with you, creating a thousand beautiful memories together."
       },
       {
-        date: "[14 AUG 2026]",
+        date: "14 Aug 2026",
         title: "Our first special memory",
-        text: "I’ll never forget the day we talked for so long and shared so many things, especially our very first handshake. ❤️ It was such a simple moment, but it became one of my most pr[...]"
+        text: "I’ll never forget the day we talked for so long and shared so many things, especially our very first handshake. ❤️ It was such a simple moment, but it became one of my most treasured memories."
       },
       {
-        date: "[03 SEP 2026]",
+        date: "03 Sep 2026",
         title: "My favourite moment with you",
-        text: "Some moments are too special to be explained in words; they’re meant to be felt and kept safe in our hearts. ❤️ My favourite moments with you are the ones that live in my memo[...]"
+        text: "Some moments are too special to be explained in words; they’re meant to be felt and kept safe in our hearts. ❤️ My favourite moments with you are the ones that live in my memory forever."
       },
       {
-        date: "DAILY",
+        date: "Daily",
         title: "The reason you are so special to me",
-        text: "Your cute smile, deep eyes, your natural fragrance, and the fearless way you face everything make me fall for you a little more every day. ❤️🥹
-But beyond all these little things, it’s you, just the way you are, that makes you my favourite person and my forever choice. ♾️💗"
+        text: "Your cute smile, deep eyes, your natural fragrance, and the fearless way you face everything make me fall for you a little more every day. ❤️🥹 But beyond all these little things, it’s you, just the way you are, that makes you my favourite person and my forever choice. ♾️💗"
       }
     ]
   },
 
+  /* ---------- 6. THE LETTER ---------- */
+  yourBirthdayMessage: `Happy Birthday, my baccha! ❤️🥹 Always stay happy, keep smiling, and please take care of your health because I want to see you healthy and happy forever! 🫶🏻💗
 
-  /* ---------- 6. THE LETTER ----------
-     Option A (easy): write your whole message in `yourBirthdayMessage` below.
-                      Leave a blank line between paragraphs.
-     Option B: keep "[YOUR_BIRTHDAY_MESSAGE]" as it is, and the starter
-               letter in `paragraphs` will be used instead. */
-  yourBirthdayMessage: `Happy Birthday, my baccha! ❤️🥹 Always stay happy, keep smiling, and please take care of your health because I want to see you healthy and happy forever! 🫶🏻💗[...]`,
+You are my favourite person and the best part of my life. I want you to know how grateful I am to have you in my world. Your smile makes every ordinary day feel special, and your presence brings a kind of happiness I can never fully explain. I love you more than words can say. ❤️
+
+I hope this new year of your life brings you endless reasons to smile, beautiful memories, success, peace, and all the love your heart deserves. No matter how many birthdays come and go, I hope you always remember how deeply you are loved and how incredibly special you are to me.`,
 
   letter: {
     eyebrow: "Chapter Three",
@@ -111,17 +101,12 @@ But beyond all these little things, it’s you, just the way you are, that makes
     skipButton: "Show the whole letter"
   },
 
-
-  /* ---------- 7. MUSIC ----------
-     Put your song in assets/audio/ and change `file`.
-     Only use music you have permission to use.
-     Set file to "" to hide the player completely. */
+  /* ---------- 7. MUSIC ---------- */
   music: {
     file: "assets/audio/birthday-melody.mp3",
     title: "A Little Melody for You",
     unavailableText: "Music isn't available right now"
   },
-
 
   /* ---------- 8. BIRTHDAY CAKE ---------- */
   cake: {
@@ -130,10 +115,9 @@ But beyond all these little things, it’s you, just the way you are, that makes
     intro: "Close your eyes, think of something beautiful, and then tap the button.",
     button: "Make a Wish ✨",
     relightButton: "Light the Candles Again 🕯️",
-    candles: 5,                      // 1 – 9
-    finalMessage: `May life keep your smile glowing, your dreams soaring, and your heart wrapped in happiness, my baccha. ♡\nHappy Birthday, my love. Take care of yourself, because my favourite future is the one spent with you. ∞❤️`
+    candles: 5,
+    finalMessage: `May life keep your smile glowing, your dreams soaring, and your heart wrapped in happiness, my baccha. ♡\nHappy Birthday, my love. Take care of yourself, because my favourite thing is seeing you happy.`
   },
-
 
   /* ---------- 9. FINAL SURPRISE ---------- */
   final: {
