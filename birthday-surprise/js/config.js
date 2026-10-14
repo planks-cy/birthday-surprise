@@ -11,11 +11,11 @@
 window.BIRTHDAY_CONFIG = {
 
   /* ---------- 1. NAMES ---------- */
-  herName: "[HER_NAME]",            // her name or nickname
-  yourName: "[YOUR_NAME]",          // your name (shown in the letter's sign-off)
+  herName: "[Priyanka]",            // her name or nickname
+  yourName: "[Rahul]",          // your name (shown in the letter's sign-off)
 
   /* Browser tab title */
-  pageTitle: "A Birthday Surprise, Just for You ❤️",
+  pageTitle: "A Birthday Surprise, Just for You ❤️ My Zoobi Doobi",
 
 
   /* ---------- 2. THEME COLORS ---------- */
@@ -31,7 +31,7 @@ window.BIRTHDAY_CONFIG = {
 
   /* ---------- 3. FIRST SCREEN ---------- */
   hero: {
-    eyebrow: "For {herName}",
+    eyebrow: "For {ZOOBI DOOBI}",
     title: "Happy Birthday, Beautiful! ❤️",
     subtitle: "Today is all about celebrating you and the happiness you bring into my life.",
     button: "Start Your Surprise 💗"
@@ -63,22 +63,23 @@ window.BIRTHDAY_CONFIG = {
     subtitle: "Every love story is beautiful, but ours is my favourite.",
     milestones: [
       {
-        date: "[DATE]",
+        date: "[10 AUG 2026]",
         title: "The day we met",
-        text: "[Write a few lines about the day you met — where you were and what you remember.]"
+        text: "[The day I met you, I didn’t know what the future held, but my heart had already made its choice. ❤️
+I just knew I wanted to spend my entire life with you, creating a thousand beautiful memories together. 💗]"
       },
       {
-        date: "[DATE]",
+        date: "[14 AUG 2026]",
         title: "Our first special memory",
-        text: "[Describe the first memory together that you will never forget.]"
+        text: "[I’ll never forget the day we talked for so long and shared so many things, especially our very first handshake. ❤️ It was such a simple moment, but it became one of my most precious memories with you. 💗]"
       },
       {
-        date: "[DATE]",
+        date: "[03 SEP 2026]",
         title: "My favourite moment with you",
-        text: "[Tell her about your favourite moment together and why it matters to you.]"
+        text: "[Some moments are too special to be explained in words; they’re meant to be felt and kept safe in our hearts. ❤️ My favourite moments with you are the ones that live in my memories, where I can relive our happiness whenever I miss you. 💗]"
       },
       {
-        date: "[DATE]",
+        date: "DAILY",
         title: "The reason you are so special to me",
         text: "[Tell her, in your own words, what makes her so special to you.]"
       }
@@ -91,7 +92,7 @@ window.BIRTHDAY_CONFIG = {
                       Leave a blank line between paragraphs.
      Option B: keep "[YOUR_BIRTHDAY_MESSAGE]" as it is, and the starter
                letter in `paragraphs` will be used instead. */
-  yourBirthdayMessage: "[YOUR_BIRTHDAY_MESSAGE]",
+  yourBirthdayMessage: "[Happy Birthday, my baccha! ❤️🥹 Always stay happy, keep smiling, and please take care of your health because I want to see you healthy and happy forever! 🫶🏻💗]",
 
   letter: {
     eyebrow: "Chapter Three",
@@ -105,8 +106,8 @@ window.BIRTHDAY_CONFIG = {
       "Today, this little corner of the internet is just for you. Every detail is made to celebrate the beautiful person you are.",
       "Happy Birthday, my beautiful girl. You deserve the world. ❤️"
     ],
-    signOff: "Forever yours,",
-    signature: "{yourName}",
+    signOff: "Forever and always yours, ❤️,",
+    signature: "{Rahul}",
     skipButton: "Show the whole letter"
   },
 
