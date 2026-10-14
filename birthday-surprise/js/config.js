@@ -130,7 +130,8 @@ window.BIRTHDAY_CONFIG = {
     button: "Make a Wish ✨",
     relightButton: "Light the Candles Again 🕯️",
     candles: 5,                      // 1 – 9
-    finalMessage: "May your smile always shine as brightly as your dreams. Happy Birthday, my love! ❤️"
+    finalMessage: "May life keep your smile glowing, your dreams soaring, and your heart wrapped in happiness, my baccha. ♡
+                  Happy Birthday, my love. Take care of yourself, because my favourite future is the one spent with you. ∞❤️"
   },
 
 
