@@ -48,10 +48,10 @@ window.BIRTHDAY_CONFIG = {
     subtitle: "A few of my favourite moments, kept safe in one little place."
   },
   photos: [
-    { src: "assets/images/photo-1.svg", alt: "Placeholder photo 1 — replace with your own", caption: "The beginning of something beautiful." },
-    { src: "assets/images/photo-2.svg", alt: "Placeholder photo 2 — replace with your own", caption: "My favourite moments are the ones with you." },
-    { src: "assets/images/photo-3.svg", alt: "Placeholder photo 3 — replace with your own", caption: "Every little memory means everything to me." },
-    { src: "assets/images/photo-4.svg", alt: "Placeholder photo 4 — replace with your own", caption: "And somehow, you make ordinary days special." }
+    { src: "Snapchat-136960592.jpg.jpeg", alt: "Placeholder photo 1 — replace with your own", caption: "The beginning of something beautiful." },
+    { src: "Snapchat-1137565411.jpg.jpeg", alt: "Placeholder photo 2 — replace with your own", caption: "My favourite moments are the ones with you." },
+    { src: "Snapchat-1267136204.jpg.jpeg", alt: "Placeholder photo 3 — replace with your own", caption: "Every little memory means everything to me." },
+    { src: "Snapchat-1390988976.jpg.jpeg", alt: "Placeholder photo 4 — replace with your own", caption: "And somehow, you make ordinary days special." }
   ],
 
 
@@ -105,7 +105,7 @@ window.BIRTHDAY_CONFIG = {
       "Today, this little corner of the internet is just for you. Every detail is made to celebrate the beautiful person you are.",
       "Happy Birthday, my beautiful girl. You deserve the world. ❤️"
     ],
-    signOff: "Forever and always yours, ❤️,",
+    signOff: "Forever and always yours ❤️,",
     signature: "{Rahul}",
     skipButton: "Show the whole letter"
   },
