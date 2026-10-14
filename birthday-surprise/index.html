@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>A Birthday Surprise, Just for You ❤️</title>
+  <meta name="description" content="A little birthday surprise, made with love.">
+  <meta name="theme-color" content="#FFD6E7">
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:title" content="A Birthday Surprise, Just for You ❤️">
+  <meta property="og:description" content="Tap to open your little surprise.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23F47778' d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Shared SVG sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="hg" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#F9A0A8"/>
+        <stop offset="1" stop-color="#F47778"/>
+      </linearGradient>
+    </defs>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path fill="currentColor" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></symbol>
+    <symbol id="i-heart-grad" viewBox="0 0 24 24"><path fill="url(#hg)" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#memories">Skip to the photos</a>
+
+  <div class="ambient" id="ambient" aria-hidden="true"></div>
+  <canvas id="fx" aria-hidden="true"></canvas>
+
+  <nav class="dots" aria-label="Sections">
+    <a href="#hero" aria-label="Opening" title="Opening"></a>
+    <a href="#memories" aria-label="Memories" title="Memories"></a>
+    <a href="#story" aria-label="Our story" title="Our story"></a>
+    <a href="#letter" aria-label="Letter" title="Letter"></a>
+    <a href="#cake" aria-label="Cake" title="Cake"></a>
+    <a href="#final" aria-label="Finale" title="Finale"></a>
+  </nav>
+
+  <!-- Music player (fixed) -->
+  <div class="player" id="player" role="group" aria-label="Music player">
+    <button class="player-btn" id="music-toggle" type="button" aria-label="Play music" aria-pressed="false">
+      <svg class="ic-play" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5v14l11-7z"/></svg>
+      <svg class="ic-pause" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6 5h4v14H6zm8 0h4v14h-4z"/></svg>
+    </button>
+    <div class="player-meta">
+      <span class="player-label"><span aria-hidden="true">♪</span> Music</span>
+      <span class="player-title" id="music-title">A Little Melody for You</span>
+    </div>
+    <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+    <audio id="bgm" loop preload="none"></audio>
+  </div>
+
+  <main>
+
+    <!-- 1. HERO -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="hero-hearts" id="hero-hearts" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <p class="hero-eyebrow" data-bind="hero.eyebrow">For [HER_NAME]</p>
+        <h1 class="hero-title" id="hero-title">Happy Birthday, Beautiful! ❤️</h1>
+        <p class="hero-sub" data-bind="hero.subtitle">Today is all about celebrating you and the happiness you bring into my life.</p>
+        <div class="hero-cta">
+          <button class="btn" id="start-btn" type="button" data-bind="hero.button">Start Your Surprise 💗</button>
+        </div>
+      </div>
+      <a class="scroll-hint" id="scroll-hint" href="#memories" aria-label="Scroll down to start the surprise">
+        <span class="scroll-hint-inner"><span class="mouse"></span><span>Scroll</span></span>
+      </a>
+    </section>
+
+    <!-- 2. MEMORIES -->
+    <section class="section memories" id="memories" aria-labelledby="memories-title">
+      <div class="section-inner">
+        <header class="section-head reveal">
+          <p class="section-eyebrow" data-bind="memories.eyebrow">Chapter One</p>
+          <h2 class="section-title" id="memories-title" data-bind="memories.title">Our Beautiful Memories</h2>
+          <div class="ornament" aria-hidden="true"><span></span><svg viewBox="0 0 24 24"><use href="#i-heart"/></svg><span></span></div>
+          <p class="section-sub" data-bind="memories.subtitle"></p>
+        </header>
+        <div class="gallery" id="gallery"></div>
+      </div>
+    </section>
+
+    <!-- 3. STORY -->
+    <section class="section story" id="story" aria-labelledby="story-title">
+      <div class="section-inner">
+        <header class="section-head reveal">
+          <p class="section-eyebrow" data-bind="story.eyebrow">Chapter Two</p>
+          <h2 class="section-title" id="story-title" data-bind="story.title">Our Story</h2>
+          <div class="ornament" aria-hidden="true"><span></span><svg viewBox="0 0 24 24"><use href="#i-heart"/></svg><span></span></div>
+          <p class="section-sub" data-bind="story.subtitle"></p>
+        </header>
+        <ol class="timeline" id="timeline" data-reveal></ol>
+      </div>
+    </section>
+
+    <!-- 4. LETTER -->
+    <section class="section letter-section" id="letter" aria-labelledby="letter-title">
+      <div class="section-inner">
+        <header class="section-head reveal">
+          <p class="section-eyebrow" data-bind="letter.eyebrow">Chapter Three</p>
+          <h2 class="section-title" id="letter-title" data-bind="letter.heading">A Little Letter for You 💌</h2>
+        </header>
+        <article class="paper reveal" id="paper">
+          <span class="seal" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-heart"/></svg></span>
+          <div class="letter-body">
+            <div class="letter-ghost" id="letter-ghost" aria-hidden="true"></div>
+            <div class="letter-typed" id="letter-typed" aria-hidden="true"></div>
+            <div class="sr-only" id="letter-sr"></div>
+          </div>
+          <p class="letter-sign" id="letter-sign"></p>
+          <div class="letter-heart" id="letter-heart" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-heart-grad"/></svg></div>
+        </article>
+        <div class="letter-actions" id="letter-actions">
+          <button class="btn btn-ghost" id="skip-letter" type="button" data-bind="letter.skipButton">Show the whole letter</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. CAKE -->
+    <section class="section cake-section" id="cake" aria-labelledby="cake-title">
+      <div class="section-inner">
+        <header class="section-head reveal">
+          <p class="section-eyebrow" data-bind="cake.eyebrow">Chapter Four</p>
+          <h2 class="section-title" id="cake-title" data-bind="cake.title">Make a Wish</h2>
+          <div class="ornament" aria-hidden="true"><span></span><svg viewBox="0 0 24 24"><use href="#i-heart"/></svg><span></span></div>
+          <p class="section-sub" data-bind="cake.intro"></p>
+        </header>
+
+        <div class="cake-stage reveal" id="cake-stage" role="img" aria-label="A birthday cake with lit candles">
+          <div class="cake-glow"></div>
+          <div class="plate"></div>
+          <div class="tier tier-bottom"><span class="tier-hearts" aria-hidden="true">♥ ♥ ♥ ♥ ♥</span></div>
+          <div class="tier tier-top"><span class="sprinkles"></span></div>
+          <div class="candles" id="candles"></div>
+        </div>
+
+        <div class="cake-actions reveal">
+          <button class="btn" id="wish-btn" type="button" data-bind="cake.button">Make a Wish ✨</button>
+        </div>
+        <p class="cake-message" id="cake-message" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <!-- 6. FINAL -->
+    <section class="section final" id="final" aria-labelledby="final-title">
+      <div class="section-inner">
+        <h2 class="final-title reveal" id="final-title" data-bind="final.title">One Last Thing, Beautiful... 💗</h2>
+        <div class="glow-heart reveal" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-heart-grad"/></svg></div>
+        <div class="final-words" id="final-words" data-reveal></div>
+        <div class="final-actions reveal" id="final-actions">
+          <button class="btn" id="replay-btn" type="button" data-bind="final.button">Replay Our Little Story</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Photo viewer -->
+  <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+    <figure class="lb-figure">
+      <img id="lb-img" alt="">
+      <figcaption id="lb-cap"></figcaption>
+    </figure>
+    <button class="lb-btn lb-close" id="lb-close" type="button" aria-label="Close photo" autofocus>
+      <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <button class="lb-btn lb-prev" id="lb-prev" type="button" aria-label="Previous photo">
+      <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>
+    </button>
+    <button class="lb-btn lb-next" id="lb-next" type="button" aria-label="Next photo">
+      <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </button>
+  </dialog>
+
+  <script src="js/config.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
