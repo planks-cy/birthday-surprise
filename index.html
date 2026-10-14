@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="0; url=./birthday-surprise/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birthday Surprise</title>
+    <style>
+      :root {
+        --bg: #fff7fb;
+        --card: #ffffff;
+        --text: #2b1b2a;
+        --muted: #6d5369;
+        --border: #f3d9e8;
+        --accent: #f47778;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: radial-gradient(circle at top, #fff8fb 0%, #ffe9f4 40%, #fdf2f8 100%);
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--text);
+      }
+      .card {
+        width: min(90vw, 520px);
+        background: rgba(255,255,255,0.84);
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        box-shadow: 0 18px 60px rgba(214, 111, 154, 0.12);
+        padding: 2rem 1.5rem;
+        text-align: center;
+      }
+      .dot {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        margin: 0 4px;
+        background: var(--accent);
+        border-radius: 50%;
+        animation: pulse 1.2s ease-in-out infinite;
+      }
+      .dot:nth-child(2) { animation-delay: 0.2s; }
+      .dot:nth-child(3) { animation-delay: 0.4s; }
+      @keyframes pulse {
+        0%, 100% { transform: scale(0.8); opacity: 0.7; }
+        50% { transform: scale(1.15); opacity: 1; }
+      }
+      a {
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 700;
+      }
+      p { color: var(--muted); }
+    </style>
+  </head>
+  <body>
+    <main class="card" aria-live="polite">
+      <div aria-hidden="true" style="display:flex; justify-content:center; margin-bottom: 0.7rem;">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+      <h1>Loading your surprise...</h1>
+      <p>If you are not redirected automatically, <a href="./birthday-surprise/">click here</a>.</p>
+    </main>
+  </body>
+</html>
